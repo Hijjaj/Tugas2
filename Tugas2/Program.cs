@@ -22,7 +22,8 @@ namespace Tugas2
                 con.Open();
             } catch (Exception e)
             {
-
+                Console.WriteLine("Gagal" + e);
+                Console.ReadKey();
             }
         }
     }
