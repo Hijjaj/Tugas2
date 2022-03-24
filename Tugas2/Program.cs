@@ -11,15 +11,16 @@ namespace Tugas2
     {
         static void Main(string[] args)
         {
-
+            new Program().Connecting();
         }
-        public void InsertTable()
+        public void Connecting()
         {
             SqlConnection con = null;
             try
             {
                 con = new SqlConnection("data source=LAPTOP-OG8P1VHL\\HIJJAJ;database=sewatoko;Integrated Security = TRUE");
                 con.Open();
+                Console.WriteLine("Sukses");
             } catch (Exception e)
             {
                 Console.WriteLine("Gagal" + e);
